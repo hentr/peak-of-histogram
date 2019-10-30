@@ -15,7 +15,7 @@
         $ pip install hyperspy
         $ conda install hyperspy -c conda-forge
         
-    If using hyperspy,  uncomment line 24 and replace lines 60-61 with 63-65
+    If using hyperspy,  uncomment line 24 and replace lines 62-63 with 65-67
 """
 
 from numpy import argmax, histogram, zeros

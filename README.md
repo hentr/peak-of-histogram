@@ -3,7 +3,7 @@ This is a peak-of-histogram background subtraction algorithm using numpy/python.
     
 Author: Trond Henninen, trond.henninen@empa.ch
        
-This code reads/writes most common image formats (including tifimage stacks) using scikit-image, which can be installed using pip or conda:
+This code reads/writes most common image formats (including tif image stacks) using scikit-image, which can be installed using pip or conda:
 
 > pip install scikit-image
 

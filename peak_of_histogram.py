@@ -24,7 +24,7 @@ from skimage import io
 #from hyperspy.api import load
 
 
-def bkgrsubt(imgdata,individual_frames=True):
+def peak_of_histogram(imgdata,individual_frames=True):
     nbins = 100 #number of bins for the histogram, 100 should be precise enough
     if len(imgdata.shape) == 2: individual_frames=False
     
@@ -60,8 +60,8 @@ if __name__ == '__main__':
         
         #if using hyperspy, replace the following two lines with the last three lines
         imgs = io.imread(file)
-        io.imsave(name+'_bkgrsubt.tif',bkgrsubt(imgs,individual_frames=True).astype('uint16'))
+        io.imsave(name+'_bkgrsubt.tif',peak_of_histogram(imgs,individual_frames=True).astype('uint16'))
 
         #s = load(file)
-        #s.data = bkgrsubt(s.data,individual_frames=True).astype('uint16')
+        #s.data = peak_of_histogram(s.data,individual_frames=True).astype('uint16')
         #s.save(name+'_bkgrsubt.tif', overwrite=True)
